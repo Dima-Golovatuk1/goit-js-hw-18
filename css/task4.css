@@ -1,0 +1,33 @@
+#value{
+    background-color: rgb(152, 152, 152);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 150px;
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 30px;
+}
+
+.btn-list{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+}
+
+#decrement-btn__task4 {
+    width: 300px;
+    height: 150px;
+}
+
+
+#increment-btn__task4 {
+    width: 300px;
+    height: 150px;
+}

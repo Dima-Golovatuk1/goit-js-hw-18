@@ -1,0 +1,16 @@
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.task3__item{
+    list-style-type: none;
+}
+
+
+.task3__item__img{
+    width: 300px;
+    height: 200px;
+}
