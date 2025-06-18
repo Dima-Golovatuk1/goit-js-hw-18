@@ -1,6 +1,9 @@
-function numberOfCategories(nameCategory){
-    const category = document.querySelector(`#${nameCategory}`)
-    console.log(`Категорія: ${nameCategory} \nКількість елементів: ${category.children.length}`);
-}
+const categories = document.querySelectorAll(".item")
 
-numberOfCategories("animals-list")
+console.log(`У списку: ${categories.length} категорії`);
+
+categories.forEach((category) => {
+    const titleElement = category.querySelector("h2").textContent;
+    const itemElement = category.querySelectorAll("li").length;
+    console.log(`Ктегорія: ${titleElement} має кількість: ${itemElement} елементів`);
+})

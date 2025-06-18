@@ -15,10 +15,9 @@ const images = [
 
 const gallery = document.querySelector('#gallery');
 
+const markUp = images.map(({url, alt}) => {
+return `<li class="task3__item"><img class="task3__item__img" src="${url}" alt="${alt}"></li>`
+}).join("");
 
-images.forEach(item => {
-    gallery.insertAdjacentHTML(
-        "beforeend",
-        `<li class="task3__item"><img class="task3__item__img" src="${item.url}" alt="${item.alt}"></li>`
-    );
-})
+gallery.insertAdjacentHTML("beforeend", markUp)
+

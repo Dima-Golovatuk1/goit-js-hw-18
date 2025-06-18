@@ -10,9 +10,16 @@ const ingredients = [
 
 const listTask2 = document.querySelector("#ingredients")
 
-ingredients.forEach(item => {
-    listTask2.insertAdjacentHTML("beforeend", `<li class="task2__item">${item}</li>`);
+const items = ingredients.map(ingredient => {
+    const itemEl = document.createElement("li");
+    itemEl.className = "task2__item"
+    itemEl.textContent = ingredient;
+
+    return itemEl
 });
+
+listTask2.append(...items);
+
 
 // ingredients.forEach(item => {
 //     const li = document.createElement('li');
